@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e2e2e2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_26PX"
+        android:layout_marginRight="@dimen/DIMEN_26PX"
+        android:layout_marginTop="@dimen/DIMEN_26PX"
+        android:background="@drawable/item_top_circle">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/DIMEN_16PX"
+            android:text="正在进行"
+            android:textColor="#73d376"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_65PX"
+            android:layout_height="@dimen/DIMEN_65PX"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:padding="@dimen/DIMEN_16PX"
+            android:src="@drawable/icon_share" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DIMEN_250PX">
+
+        <ImageView
+            android:id="@+id/image_one"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/edit_left_circle"
+            android:scaleType="fitXY"
+            android:src="@color/blue_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/DIMEN_26PX"
+        android:layout_marginLeft="@dimen/DIMEN_26PX"
+        android:layout_marginRight="@dimen/DIMEN_26PX"
+        android:background="@drawable/item_bottom_circle"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/DIMEN_16PX"
+            android:text="逍遥替你重回十年前，相对年少的自己说些什么？"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/DIMEN_16PX"
+            android:paddingRight="@dimen/DIMEN_16PX">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1139"
+                android:textColor="#73d376"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人参与"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/DIMEN_16PX"
+            android:paddingRight="@dimen/DIMEN_16PX"
+            android:paddingTop="@dimen/DIMEN_10PX"
+            android:paddingBottom="@dimen/DIMEN_10PX"
+            android:text="逍遥替你重回十年前，相对年少的自己说些什么？"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

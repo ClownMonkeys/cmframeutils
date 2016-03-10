@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/layout_navigationbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_100PX"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_no_wifi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请检查您的网络!"
+            android:textColor="@color/primary"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/main_drawerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/fragment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <refreshview.PullToRefreshView
+                android:id="@+id/main_refresshview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone">
+            </refreshview.PullToRefreshView>
+                <pulltorefresh.PullToRefreshListView
+                    android:id="@+id/main_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="-4dp"
+                    android:divider="@color/gray"
+                    android:dividerHeight="4dp"
+                    android:fadeScrollbars="true" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/blue_light"
+            android:orientation="vertical"
+            app:layout="@layout/text_view">
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/main_navigationview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:fitsSystemWindows="true"
+                app:headerLayout="@layout/activity_main_header"
+                app:itemTextColor="@color/black"
+                app:itemIconTint="@color/primary"
+                app:menu="@menu/menu_drawer" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

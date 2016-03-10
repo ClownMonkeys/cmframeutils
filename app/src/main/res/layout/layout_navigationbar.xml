@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_99PX"
+        android:background="@drawable/gradual_change_color"
+        android:elevation="1dip">
+
+        <TextView
+            android:id="@+id/nav_text_titel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/DIMEN_6PX"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <customview.MaterialRelatveLayoutView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            ripple:rv_type="rectangle">
+
+            <ImageView
+                android:id="@+id/nav_image_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/DIMEN_10PX"
+                android:paddingTop="@dimen/DIMEN_10PX"
+                android:scaleType="fitCenter"
+                android:onClick="onClickView"
+                android:src="@drawable/navigationbar_black"
+                android:visibility="visible" />
+        </customview.MaterialRelatveLayoutView>
+
+        <customview.MaterialRelatveLayoutView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            ripple:rv_type="rectangle">
+
+            <ImageView
+                android:id="@+id/nav_image_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/DIMEN_12PX"
+                android:paddingTop="@dimen/DIMEN_12PX"
+                android:scaleType="fitCenter"
+                android:onClick="onClickView"
+                android:src="@drawable/navigationbar_menu"
+                android:visibility="invisible" />
+        </customview.MaterialRelatveLayoutView>
+
+        <customview.MaterialRelatveLayoutView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            ripple:rv_type="rectangle">
+
+            <ImageView
+                android:id="@+id/nav_image_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/DIMEN_13PX"
+                android:paddingTop="@dimen/DIMEN_13PX"
+                android:scaleType="fitCenter"
+                android:onClick="onClickView"
+                android:src="@drawable/navigationbar_search"
+                android:visibility="gone" />
+        </customview.MaterialRelatveLayoutView>
+    </RelativeLayout>
+</LinearLayout>

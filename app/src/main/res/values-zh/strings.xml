@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="check_for_updates" translatable="false">检查更新</string>
+    <string name="feedback" translatable="false">反馈</string>
+    <string name="imprint" translatable="false">版本说明</string>
+    <string name="nav_about_title">关于</string>
+    <string name="title_activity_navigation_page">欢迎</string>
+    <string name="title_activity_slider" translatable="false">CM工具</string>
+    <string name="to_score" translatable="false">去评分</string>
+</resources>

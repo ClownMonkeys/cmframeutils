@@ -1,0 +1,249 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_navigationbar" />
+
+    <scrollerlayout.FlingLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadeScrollbars="true"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:onClick="onClickView"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:gravity="center"
+                        android:padding="2dip"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/about_text_versioncode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/DIMEN_20PX"
+                        android:gravity="center"
+                        android:text="版本号 1.0"
+                        android:textColor="@color/about_text_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/about_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/about_linear_checkforupdates"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/selectable_item_background_general"
+                        android:onClick="onClickView"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <customview.TextViewTypeFace
+                                android:id="@+id/about_text_checkforupdates"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical|left"
+                                android:padding="4dp"
+                                android:text="@string/check_for_updates"
+                                android:textSize="16sp"
+                                app:customtextcolor="@color/about_text_color" />
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:src="@drawable/icon_new"
+                                android:scaleType="fitCenter"
+                                android:padding="4dp"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="10dp"
+                                android:src="@drawable/icon_next" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/DIMEN_1PX"
+                        android:layout_marginLeft="14dp"
+                        android:background="#ffe6e6e6" />
+
+                    <LinearLayout
+                        android:id="@+id/about_linear_imprint"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/selectable_item_background_general"
+                        android:onClick="onClickView"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <customview.TextViewTypeFace
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical|left"
+                                android:padding="4dp"
+                                android:text="@string/imprint"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="10dp"
+                                android:src="@drawable/icon_next" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/DIMEN_1PX"
+                        android:layout_marginLeft="14dp"
+                        android:background="#ffe6e6e6" />
+
+                    <LinearLayout
+                        android:id="@+id/about_linear_feedback"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/selectable_item_background_general"
+                        android:onClick="onClickView"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <customview.TextViewTypeFace
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical|left"
+                                android:padding="4dp"
+                                android:text="@string/feedback"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="10dp"
+                                android:src="@drawable/icon_next" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/DIMEN_1PX"
+                        android:layout_marginLeft="14dp"
+                        android:background="#ffe6e6e6" />
+
+                    <LinearLayout
+                        android:id="@+id/about_linear_toscore"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/selectable_item_background_general"
+                        android:onClick="onClickView"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <customview.TextViewTypeFace
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical|left"
+                                android:padding="4dp"
+                                android:text="@string/to_score"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="10dp"
+                                android:src="@drawable/icon_next" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:gravity="center"
+                        android:padding="10dip"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_cm" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="CM 版权所有\n Copyright 2015-2020 Cm \n All Rights Reserved"
+                        android:textColor="#666666"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </scrollerlayout.FlingLayout>
+</LinearLayout>

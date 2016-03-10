@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CMUTILS</string>
+    <string name="button_product_tour" translatable="false">Product Tour</string>
+    <string name="check_for_updates" translatable="false">Check For Updates</string>
+    <string name="feedback" translatable="false">Feedback</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="imprint">Imprint</string>
+    <string name="welcom_head_04" translatable="false">Edit Excel spreadsheets</string>
+    <string name="welcom_head_03" translatable="false">Automatically save to the web</string>
+    <string name="welcom_head_02" translatable="false">Share and edit together</string>
+    <string name="welcom_head_01" translatable="false">Spreadsheets on the go</string>
+    <string name="welcom_content_04" translatable="false">Open, edit, and save Excel files - all within Sheets.</string>
+    <string name="welcom_content_03" translatable="false">Never lose your progress, so you can keep working from any computer or device.</string>
+    <string name="welcom_content_02" translatable="false">Write on your own or invite more people to contribute.</string>
+    <string name="welcom_content_01" translatable="false">Get stuff done with or without an internet connection.</string>
+    <string name="to_score" translatable="false">To Score</string>
+    <string name="title_activity_slider" translatable="false">CMUTILS</string>
+    <string name="title_activity_settings" translatable="false">Settings</string>
+    <string name="title_activity_scrolling" translatable="false">ScrollingActivity</string>
+    <string name="title_activity_navigation_page" translatable="false">Welcome</string>
+    <string name="title_activity_main2" translatable="false">Main2Activity</string>
+    <string name="title_activity_about" translatable="false">AboutActivity</string>
+    <string name="pref_title_vibrate" translatable="false">Vibrate</string>
+    <string name="pref_title_system_sync_settings" translatable="false">System sync settings</string>
+    <string name="pref_title_sync_frequency" translatable="false">Sync frequency</string>
+    <string name="pref_title_social_recommendations" translatable="false">Enable social recommendations</string>
+    <string name="pref_title_ringtone" translatable="false">Ringtone</string>
+    <string name="pref_title_new_message_notifications" translatable="false">New message notifications</string>
+    <string name="pref_title_display_name" translatable="false">Display name</string>
+    <string name="pref_title_add_friends_to_messages" translatable="false">Add friends to messages</string>
+    <string name="pref_ringtone_silent" translatable="false">Silent</string>
+    <string name="pref_header_notifications" translatable="false">Notifications</string>
+    <string name="pref_header_general" translatable="false">General</string>
+    <string name="pref_header_data_sync" translatable="false">Data &amp; sync</string>
+    <string name="pref_description_social_recommendations" translatable="false">Recommendations for people to contact         based on your message history</string>
+    <string name="pref_default_display_name" translatable="false">John Smith</string>
+    <string name="nav_title" translatable="false">Message</string>
+    <string name="nav_about_title" translatable="false">About</string>
+</resources>

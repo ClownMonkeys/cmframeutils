@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple">#ffaa66cc</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#eaeaea</color>
+
+    <color name="primary">#2196f3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#03A9F4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+
+
+    <!-- Android System Material-style light:浅色  dark：深色 bright：亮色-->
+    <!--light:浅色 -->
+    <color name="blue_light">#ff33b5e5</color>
+    <color name="gray_light">#33999999</color>
+    <color name="green_light">#ff99cc00</color>
+    <color name="red_light">#ffff4444</color>
+    <color name="orange_light">#ffffbb33</color>
+
+    <!--dark：深色 -->
+    <color name="blue_dark">#ff0099cc</color>
+    <color name="green_dark">#ff669900</color>
+    <color name="red_dark">#ffcc0000</color>
+    <color name="orange_dark">#ffff8800</color>
+
+    <!--bright：亮色-->
+    <color name="blue_bright">#ff00ddff</color>
+    <color name="gray_bright">#33CCCCCC</color>
+
+    <!--normal-->
+    <color name="default_normal_text_color_light">#80999999</color>
+    <color name="default_normal_text_color_dark">#80999999</color>
+
+    <!--selected-->
+    <color name="default_selected_text_color_light">#33b5e5</color>
+    <color name="default_selected_text_color_dark">#33b5e5</color>
+
+    <!--pressed -->
+    <color name="default_pressed_text_color_light">#0099cc</color>
+    <color name="default_pressed_text_color_dark">#0099cc</color>
+
+    <!--MaterialRelatveLayoutView -->
+    <color name="material_relatvelayout_color">#ff00ddff</color>
+
+    <color name="text_selected">#888</color>
+
+    <!--snackView-->
+    <color name="snack_bkgnd">#323232</color>
+    <color name="snack_alert_bkgnd">#ffff4444</color>
+    <color name="dim_white">#20FFFFFF</color>
+    <color name="button_text_color">#FB6541</color>
+
+    <!--NiceSpinner-->
+    <color name="light_gray">#fff5f5f5</color>
+
+    <color name="about_text_color">#FF233333</color>
+
+
+    <color name="androidColorA">#33B5E5</color>
+    <color name="androidColorB">#AA66CC</color>
+    <color name="androidColorC">#99CC00</color>
+    <color name="androidColorD">#FFBB33</color>
+    <color name="androidColorE">#FF4444</color>
+    <color name="accent_material_light">#2196f3</color>
+    <color name="primary_material_light">#2196f3</color>
+    <color name="primary_dark_material_light">#1972b9</color>
+
+    <!--dialog-->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="window_background">#00000000</color>
+    <color name="black_de">#DE000000</color>
+
+
+    <!--color group-->
+    <color name="group_white">#FEFEFE</color>
+    <color name="group_green_dark">#0CCC6C</color>
+    <color name="group_green_light">#56DC99</color>
+    <color name="group_green_bright">#8CE7BA</color>
+    <color name="group_green_lightw">#CFF5E2</color>
+    <color name="group_green_lightg">#A2EBC7</color>
+
+</resources>

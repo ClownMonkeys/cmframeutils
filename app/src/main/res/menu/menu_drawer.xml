@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:checkable="true"
+            android:icon="@drawable/icon_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_messages"
+            android:checkable="true"
+            android:icon="@drawable/icon_message"
+            android:title="Messages" />
+        <item
+            android:id="@+id/nav_friends"
+            android:checkable="true"
+            android:icon="@drawable/icon_friends"
+            android:title="Friends" />
+        <item
+            android:id="@+id/nav_setting"
+            android:checkable="true"
+            android:icon="@drawable/icon_setting"
+            android:title="Setting" />
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:checkable="true"
+                android:icon="@drawable/icon_help"
+                android:title="Help" />
+        </menu>
+    </item>
+</menu>

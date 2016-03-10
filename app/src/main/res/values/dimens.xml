@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Welcome sliding page  -->
+    <dimen name="welcome_images_size">360.0dip</dimen>
+    <dimen name="welcome_images_margin_top">0.0dip</dimen>
+    <dimen name="welcome_heading_margin_bottom">12.0dip</dimen>
+    <dimen name="welcome_text_margin">48.0dip</dimen>
+    <dimen name="welcome_heading">24.0sp</dimen>
+    <dimen name="welcome_text_margin_bottom">12.0dip</dimen>
+    <dimen name="welcome_content_min_height">96.0dip</dimen>
+    <dimen name="welcome_content">16.0sp</dimen>
+
+    <dimen name="sb__horizontal_margin">24dp</dimen>
+    <dimen name="sb__vertical_margin_top">16dp</dimen>
+    <dimen name="sb__vertical_margin_bottom">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!--NiceSpinner-->
+    <dimen name="three_grid_unit">24dp</dimen>
+    <dimen name="one_and_a_half_grid_unit">12dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <!-- pullrefresh-->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+</resources>
+
+

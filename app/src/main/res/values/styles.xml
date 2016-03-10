@@ -1,0 +1,140 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="FloydTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- 是否允许有标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/FloydTheme</item>
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/stack_push</item>
+        <item name="android:activityCloseEnterAnimation">@anim/stack_pop</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_right</item>
+    </style>
+
+    <style name="AndroidImageSlider_Corner_Oval_Orange">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/slider_indicator_corner_bg</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">oval</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+
+        <item name="selected_color">#f60</item>
+        <item name="unselected_color">#ffffff</item>
+        <item name="selected_width">6dp</item>
+        <item name="selected_height">6dp</item>
+        <item name="unselected_width">6dp</item>
+        <item name="unselected_height">6dp</item>
+    </style>
+
+    <!--navigation page-->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="WelcomeHeadingAppearance" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/welcome_heading</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="WelcomeContentAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/welcome_content</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--SnackView-->
+    <style name="SnackBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:maxHeight">80dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/snack_bkgnd</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="edit_text_style">
+        <item name="android:textColorHint">#969696</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textCursorDrawable" tools:targetApi="honeycomb_mr1">
+            @drawable/color_cursor
+        </item>
+        <item name="android:background">@drawable/edit_normal_input_bg</item>
+    </style>
+
+    <style name="SnackBarContainer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="SnackBarMessage">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/sb__horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:ignore="NewApi">@dimen/sb__horizontal_margin
+        </item>
+        <item name="android:layout_marginRight">@dimen/sb__horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:ignore="NewApi">@dimen/sb__horizontal_margin
+        </item>
+        <item name="android:layout_marginTop">@dimen/sb__vertical_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/sb__vertical_margin_bottom</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="SnackBarButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/sb__horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/sb__horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/sb__vertical_margin_top</item>
+        <item name="android:paddingBottom">@dimen/sb__vertical_margin_bottom</item>
+        <item name="android:textColor">@color/snack_alert_bkgnd</item>
+        <item name="android:editable">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps" tools:ignore="NewApi">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="cmd_dialog_style" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+</resources>
